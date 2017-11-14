@@ -1,0 +1,141 @@
+body {
+    background-image: url(img/baggrund1.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#fyld {
+    width: 100vw;
+    height: 1100px;
+}
+
+#scene {
+    width: 100vw;
+    height: 1700px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+h2 {
+    margin: 0;
+}
+
+
+/****MENU****/
+
+.nav {
+    padding: 2px;
+    background-color: white;
+    opacity: 0.9;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    padding: 10px;
+    z-index: 3;
+}
+
+header nav {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0 5vw 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #606060;
+    padding: 0px;
+    display: block;
+}
+
+header nav a:hover {
+    color: red;
+}
+
+@media screen and (min-width:700px) {
+    header nav a {
+        display: inline-block;
+    }
+}
+
+
+/****BAGGRUND****/
+
+#baggrund {
+    background-color: white;
+    opacity: 0.9;
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    flex-basis: 400px;
+    margin: 20px;
+}
+
+#info {
+    border: 1px red solid;
+    background-color: white;
+    opacity: 0.9;
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    flex-basis: 400px;
+    margin: 20px;
+}
+
+#arkiv {
+    background-color: white;
+    opacity: 0.9;
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    flex-basis: 400px;
+    margin: 20px;
+}
+
+#venner {
+    background-color: white;
+    opacity: 0.9;
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    flex-basis: 400px;
+    margin: 20px;
+}
+
+#kontakt {
+    background-color: white;
+    opacity: 0.9;
+    width: 1320px;
+    height: 500px;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.fyldimg {
+    background-color: white;
+    opacity: 0.9;
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    flex-basis: 400px;
+    margin: 20px;
+}
+
+.imgyay {
+    filter: grayscale(100%);
+    width: 100%;
+}
+
+#stream {
+    width: 100vw;
+}
+
+footer {
+    bottom: 0%;
+    position: fixed;
+}
