@@ -13,7 +13,7 @@ body {
 
 #scene {
     width: 100vw;
-    height: 1700px;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
@@ -21,6 +21,10 @@ body {
 
 h2 {
     margin: 0;
+}
+
+a {
+    color: red;
 }
 
 
@@ -62,10 +66,26 @@ header nav a:hover {
     }
 }
 
+header nav p {
+    color: red;
+}
+
 
 /****BAGGRUND****/
 
+#nyheder {
+    border: 1px red solid;
+    background-color: white;
+    opacity: 0.9;
+    width: 800px;
+    height: 500px;
+    padding: 10px;
+    flex-basis: 800px;
+    margin: 20px;
+}
+
 #baggrund {
+    border: 1px red solid;
     background-color: white;
     opacity: 0.9;
     width: 400px;
@@ -87,6 +107,7 @@ header nav a:hover {
 }
 
 #arkiv {
+    border: 1px red solid;
     background-color: white;
     opacity: 0.9;
     width: 400px;
@@ -97,6 +118,7 @@ header nav a:hover {
 }
 
 #venner {
+    border: 1px red solid;
     background-color: white;
     opacity: 0.9;
     width: 400px;
@@ -107,6 +129,7 @@ header nav a:hover {
 }
 
 #kontakt {
+    border: 1px red solid;
     background-color: white;
     opacity: 0.9;
     width: 1320px;
@@ -117,6 +140,7 @@ header nav a:hover {
 }
 
 .fyldimg {
+    border: 1px red solid;
     background-color: white;
     opacity: 0.9;
     width: 400px;
