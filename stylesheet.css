@@ -1,6 +1,7 @@
 body {
     background-image: url(img/baggrund1.jpg);
     background-repeat: no-repeat;
+    background-size: contain;
     background-color: black;
     margin: 0;
     font-family: sans-serif;
@@ -8,19 +9,27 @@ body {
 
 #fyld {
     width: 100vw;
-    height: 1100px;
+    height: 700px;
 }
 
 #scene {
     width: 100vw;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#kontaktscene {
+    width: 100vw;
     height: 600px;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
-}
-
-h2 {
-    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
 a {
@@ -51,13 +60,13 @@ header nav {
 
 header nav a {
     text-decoration: none;
-    color: #606060;
+    color: red;
     padding: 0px;
     display: block;
 }
 
 header nav a:hover {
-    color: red;
+    color: #606060;
 }
 
 @media screen and (min-width:700px) {
@@ -71,89 +80,174 @@ header nav p {
 }
 
 
-/****BAGGRUND****/
+/****boxe****/
 
 #nyheder {
-    border: 1px red solid;
+    border: 2px red solid;
     background-color: white;
     opacity: 0.9;
-    width: 800px;
+    width: 60%;
     height: 500px;
     padding: 10px;
-    flex-basis: 800px;
-    margin: 20px;
-}
-
-#baggrund {
-    border: 1px red solid;
-    background-color: white;
-    opacity: 0.9;
-    width: 400px;
-    height: 500px;
-    padding: 10px;
-    flex-basis: 400px;
-    margin: 20px;
+    margin-bottom: 40px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 #info {
-    border: 1px red solid;
+    border: 2px red solid;
+    border-radius: 2px;
     background-color: white;
     opacity: 0.9;
-    width: 400px;
-    height: 500px;
+    width: 60%;
+    height: 210px;
     padding: 10px;
-    flex-basis: 400px;
-    margin: 20px;
+}
+
+.infoimg {
+    filter: grayscale(100%);
+    float: right;
+    height: 200px;
+}
+
+#hist {
+    border: 2px red solid;
+    background-color: white;
+    opacity: 0.9;
+    width: 60%;
+    height: 750px;
+    padding: 10px;
+    margin-bottom: 40px;
+    overflow: scroll;
+}
+
+.histimg {
+    float: right;
+    filter: grayscale(100%);
 }
 
 #arkiv {
-    border: 1px red solid;
+    border: 2px red solid;
     background-color: white;
     opacity: 0.9;
-    width: 400px;
-    height: 500px;
+    width: 60%;
+    height: 520px;
     padding: 10px;
-    flex-basis: 400px;
-    margin: 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+#fyldimg {
+    border: 2px red solid;
+    border-radius: 2px;
+    background-color: white;
+    opacity: 0.9;
+    width: 60%;
+    height: 250px;
+    padding: 10px;
+}
+
+#parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#imgyay1 {
+    background-image: url(img/1800146_542387465859483_921964666_o.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    width: 15vw;
+    height: 15vw;
+    margin: 5px;
+}
+
+#imgyay2 {
+    background-image: url(img/15965478_1140060319425525_5345048648140680760_n.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    width: 15vw;
+    height: 15vw;
+    margin: 5px;
+}
+
+#imgyay3 {
+    background-image: url(img/1399828_494973677267529_679360967_o.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    width: 15vw;
+    height: 15vw;
+    margin: 5px;
 }
 
 #venner {
-    border: 1px red solid;
+    border: 2px red solid;
     background-color: white;
     opacity: 0.9;
-    width: 400px;
-    height: 500px;
+    width: 60%;
+    height: 890px;
     padding: 10px;
-    flex-basis: 400px;
-    margin: 20px;
+    margin-bottom: 40px;
+    position: absolute;
+}
+
+#wrap {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#left {
+    margin-right: 250px;
+}
+
+.imgven {
+    width: 98%;
 }
 
 #kontakt {
-    border: 1px red solid;
+    border: 2px red solid;
     background-color: white;
     opacity: 0.9;
-    width: 1320px;
-    height: 500px;
+    width: 60%;
+    height: 490px;
     padding: 10px;
-    margin: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
+#kontaktimg {
+    border: 2px red solid;
+    border-radius: 2px;
+    background-color: white;
+    opacity: 0.9;
+    width: 60%;
+    height: 280px;
+    padding: 10px;
+}
+
+.konimg {
+    filter: grayscale(100%);
+    width: 48.5%;
+    margin: 5px;
+}
+
+
+/*
 .fyldimg {
     border: 1px red solid;
     background-color: white;
     opacity: 0.9;
-    width: 400px;
+    width: 60%;
     height: 500px;
     padding: 10px;
-    flex-basis: 400px;
     margin: 20px;
 }
+*/
 
-.imgyay {
-    filter: grayscale(100%);
-    width: 100%;
-}
+
+/****footerstream****/
 
 #stream {
     width: 100vw;
@@ -162,4 +256,60 @@ header nav p {
 footer {
     bottom: 0%;
     position: fixed;
+}
+
+video {
+    width: 100vw;
+    height: 40px;
+}
+
+
+/****kontaktform****/
+
+input[type=text],
+select,
+textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid red;
+    border-radius: 2px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #606060;
+}
+
+@media screen and (max-width: 750px) {
+    #wrap {
+        flex-wrap: wrap;
+    }
+    #venner {
+        height: auto;
+    }
+    #fyld {
+        width: 100vw;
+        height: 200px;
+    }
+    .infoimg {
+        display: none;
+    }
+    .histimg {
+        display: none;
+    }
+    #fyldimg {
+        height: 100px;
+    }
+    #kontakt {
+        height: 540px;
+    }
 }

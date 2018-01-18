@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Byens Radio</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <meta name="robots" content="noindex">
 </head>
 
 <body>
@@ -18,21 +19,33 @@
                 <a href="arkiv.html">ARKIV</a>
                 <a href="venner.html">VENNER</a>
                 <a href="kontakt.html">KONTAKT</a>
-                <p>SCROLL NED FOR MERE</p>
+                <!--<p>SCROLL NED FOR MERE</p>-->
             </nav>
 
         </div>
     </header>
     <div id="fyld"></div>
-    <div id="scene">
+    <div id="kontaktscene">
         <div id="kontakt">
 
 
             <h2>Kontakt os:</h2>
             <p>Du kan skrive til os på <a>facebook</a>, eller sende os en mail, med kontaktformularen herunder</p>
+            <form action="mailto:Byensradio@riseup.net">
+
+                <label for="fname">Din mail:</label><br>
+                <input type="text" id="fname" name="firstname" placeholder="E-mail...">
+                <br><br>
+                <label for="subject">Din besked:</label><br>
+                <textarea id="subject" name="subject" placeholder="Skriv din besked her..." style="height:200px"></textarea>
+                <br><br>
+                <input type="submit" value="Send">
+
+            </form>
         </div>
     </div>
-    <footer><audio id="stream" src="" controls></audio>
+    <footer><video controls="" autoplay="" name="media"><source src="http://192.48.88.237:8000/stream" type="audio/mpeg"></video>
+        <source src="http://192.48.88.237:8000/stream" type="audio/mpeg">
 
     </footer>
 </body>

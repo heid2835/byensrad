@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Byens Radio</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <meta name="robots" content="noindex">
 </head>
 
 <body>
@@ -17,25 +18,26 @@
                 <a href="arkiv.html">ARKIV</a>
                 <a href="venner.html">VENNER</a>
                 <a href="kontakt.html">KONTAKT</a>
-                <p>SCROLL NED FOR MERE</p>
             </nav>
-
         </div>
     </header>
     <div id="fyld"></div>
     <div id="scene">
-
-
         <div id="arkiv">
-
             <h2>Hør vores tidligere udsendelser, jingles mm.:</h2>
             <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/11273813&amp;color=%232c2c2c&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=false"></iframe></div>
-        <div class="fyldimg"><img class="imgyay" src="img/1779127_539394672825429_747690133_nkopi.jpg"></div>
+        <div id="fyldimg">
+            <div id="parent">
+                <div id="imgyay1"></div>
+                <div id="imgyay2"></div>
+                <div id="imgyay3"></div>
+            </div>
+        </div>
+        <!--        <div id="kontaktimg"><img class="konimg" src="img/1978309_545076202257276_723434665_o.jpg"><img class="konimg" src="img/1655743_534894263275470_1884304620_o.jpg"></div>-->
 
-        <div class="fyldimg"><img class="imgyay" src="img/1800146_542387465859483_921964666_o.jpg"></div>
     </div>
-    <footer><audio id="stream" src="" controls></audio>
-
+    <footer><video controls="" autoplay="" name="media"><source src="http://192.48.88.237:8000/stream" type="audio/mpeg"></video>
+        <source src="http://192.48.88.237:8000/stream" type="audio/mpeg">
     </footer>
 </body>
 
